@@ -102,12 +102,12 @@ body {
     }
 }
 
-.content-wrapper,
+/* .content-wrapper,
 .right-side {
     min-height: 100%;
     background-image: radial-gradient(#2f38a8, #030303);
     z-index: 800
-}
+} */
 
 .main-footer {
     /* background: #fff; */
@@ -643,7 +643,7 @@ a:focus {
 
 .sidebar-menu li.active>.treeview-menu {
     display: block;
-   
+
 }
 
 .sidebar-menu .treeview-menu {
@@ -1362,10 +1362,12 @@ a:focus {
 
 @media (max-width:991px) {
     .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
-    background-color: #f9f9f9;
+        background-color: #f9f9f9;
+    }
 }
-}.navbar-nav>.user-menu .user-image {
-    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default: hover {
+
+.navbar-nav>.user-menu .user-image {
+    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
         background-color: #f9f9f9;
     }
 }
@@ -5922,14 +5924,14 @@ table.text-center th {
 
 
 
-.skin-blue .wrapper,
+/* .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
 
     background-image: linear-gradient(109deg, #030303, #2a318e);
 
 
-}
+} */
 
 .disable {
     display: none !important;
@@ -6224,6 +6226,52 @@ table.text-center th {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+}
+
+span {
+    content: "\2103";
+}
+
+.temprature_img {
+    width: 25px;
+}
+
+.degree {
+    font-size: 40px !important;
+}
+
+.body_img {
+    background-image: url(../img/blue-sky-with-rainy-clouds.jpg) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    backdrop-filter: blur(3px);
+
+}
+
+.nav_top {
+    background-color: #000000ab !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.main-sidebar {
+    background-color: #000000ab !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* celciuos styles end------------ */
