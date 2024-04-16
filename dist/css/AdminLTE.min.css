@@ -102,12 +102,12 @@ body {
     }
 }
 
-.content-wrapper,
+/* .content-wrapper,
 .right-side {
     min-height: 100%;
     background-image: radial-gradient(#2f38a8, #030303);
     z-index: 800
-}
+} */
 
 .main-footer {
     /* background: #fff; */
@@ -643,7 +643,7 @@ a:focus {
 
 .sidebar-menu li.active>.treeview-menu {
     display: block;
-   
+
 }
 
 .sidebar-menu .treeview-menu {
@@ -1363,10 +1363,12 @@ a:focus {
 
 @media (max-width:991px) {
     .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
-    background-color: #f9f9f9;
+        background-color: #f9f9f9;
+    }
 }
-}.navbar-nav>.user-menu .user-image {
-    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default: hover {
+
+.navbar-nav>.user-menu .user-image {
+    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
         background-color: #f9f9f9;
     }
 }
@@ -5923,14 +5925,14 @@ table.text-center th {
 
 
 
-.skin-blue .wrapper,
+/* .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
 
     background-image: linear-gradient(109deg, #030303, #2a318e);
 
 
-}
+} */
 
 .disable {
     display: none !important;
@@ -6227,73 +6229,50 @@ table.text-center th {
     justify-content: center;
 }
 
+.card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+}
+
+span {
+    content: "\2103";
+}
+
+.temprature_img {
+    width: 25px;
+}
+
+.degree {
+    font-size: 40px !important;
+}
+
+.body_img {
+    background-image: url(../img/blue-sky-with-rainy-clouds.jpg) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    backdrop-filter: blur(3px);
+
+}
+
+.nav_top {
+    background-color: #000000ab !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.main-sidebar {
+    background-color: #000000ab !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 /* celciuos styles end------------ */
-
-/* 160424 starts\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.dt-tm {
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
-    text-align: center;
-    border-radius: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 0 0 8px;
-}
-.sel-1 {
-    font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 1.2rem;
-
-}
-.noticard {
-    width: 100%;
-    height: 100%;
-    color: white;
-    border: 0px solid rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-    box-shadow: rgba(104, 104, 104, 0.151) 0rem 1.25rem 1.6875rem 0rem;
-    border: 1px solid white;
-    padding: 9px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-image: linear-gradient(343deg, #0303035c, #222fd869);
-    backdrop-filter: blur(5px);
-    text-align: center;
-
-}
-.dt-tm-card {
-    color: aqua;
-    font-weight: 600;
-    background: #1d2263;
-    border: px solid;
-    font-size: 3rem;
-    font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
-    text-align: center;
-    border-radius:  22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(338deg, #03030363, #2f38a8);
-}
-.selectcard {
-    width: 100%;
-    height: 100%;
-    color: white;
-    border: 0px solid rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-    box-shadow: rgba(104, 104, 104, 0.151) 0rem 1.25rem 1.6875rem 0rem;
-    border: 1px solid white;
-    padding: 9px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-image: linear-gradient(343deg, #0303035c, #222fd869);
-    backdrop-filter: blur(5px);
-    text-align: center;
-
-}
-
-/* 160424 end\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
