@@ -663,7 +663,7 @@ a:focus {
 }
 
 .sidebar-menu .treeview-menu>li>a {
-    padding: 5px 5px 5px 15px;
+    padding: 5px 5px 5px 0px;
     display: block;
     font-size: 14px;
 }
@@ -5802,14 +5802,15 @@ table.text-center th {
     color: white;
     border: 0px solid rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-    box-shadow: rgba(104, 104, 104, 0.151) 0rem 1.25rem 1.6875rem 0rem;
-    border-right: 1px solid #fed000;
-    border-bottom: 1px solid white;
+    box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
+    /* border-right: 1px solid #fed000; */
+    /* border-bottom: 1px solid white; */
+    border: 1px solid white;
     padding: 9px;
     margin-bottom: 1rem;
-    background-image: linear-gradient(343deg, #0303035c, #222fd869);
-    backdrop-filter: blur(5px);
-
+    background: #302b27ba;
+    backdrop-filter: blur(15px) !important;
+    /* filter: blur(4px); */
 }
 
 .card:hover {
@@ -6297,13 +6298,18 @@ table.text-center th {
     text-align: center;
 
 }
+.menu_icon{
+    display: flex!important;
+    align-items: center!important;
+    gap: 15px !important;
+}
 
 /* 160424 end\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .card_heading {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 4px;
+    gap: 4px ;
 }
 
 span {
@@ -6316,6 +6322,7 @@ span {
 
 .degree {
     font-size: 40px !important;
+    color: #e0ff00;
 }
 
 .body_img {
@@ -6346,3 +6353,5 @@ span {
 }
 
 /* celciuos styles end------------ */
+
+
