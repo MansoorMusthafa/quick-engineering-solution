@@ -1,6 +1,8 @@
 /* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400, 600, 700, 300italic, 400italic, 600italic); */
 
 /*!
+
+    /*!
  *   AdminLTE v2.3.8
  *   Author:  Almsaeed Studio
  *	 Website: Almsaeed Studio <http://almsaeedstudio.com>
@@ -641,6 +643,7 @@ a:focus {
 
 .sidebar-menu li.active>.treeview-menu {
     display: block;
+   
 }
 
 .sidebar-menu .treeview-menu {
@@ -656,7 +659,7 @@ a:focus {
 }
 
 .sidebar-menu .treeview-menu>li {
-    margin: 0;
+    margin: 12px;
 }
 
 .sidebar-menu .treeview-menu>li>a {
@@ -1358,6 +1361,10 @@ a:focus {
 }
 
 @media (max-width:991px) {
+    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
+    background-color: #f9f9f9;
+}
+}.navbar-nav>.user-menu .user-image {
     .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default: hover {
         background-color: #f9f9f9;
     }
