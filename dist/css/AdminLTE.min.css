@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400, 600, 700, 300italic, 400italic, 600italic);
+
     /*!
  *   AdminLTE v2.3.8
  *   Author:  Almsaeed Studio
@@ -456,6 +456,7 @@ a:hover, a:active, a:focus {
 }
 .sidebar-menu li.active>.treeview-menu {
     display: block;
+   
 }
 .sidebar-menu .treeview-menu {
     display: none;
@@ -468,7 +469,7 @@ a:hover, a:active, a:focus {
     padding-left: 20px;
 }
 .sidebar-menu .treeview-menu>li {
-    margin: 0;
+    margin: 12px;
 }
 .sidebar-menu .treeview-menu>li>a {
     padding: 5px 5px 5px 15px;
@@ -972,7 +973,7 @@ a:hover, a:active, a:focus {
     color: #666666;
 }
 @media (max-width:991px) {
-    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default: hover {
+    .navbar-nav>.user-menu>.dropdown-menu>.user-footer .btn-default:hover {
     background-color: #f9f9f9;
 }
 }.navbar-nav>.user-menu .user-image {
