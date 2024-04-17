@@ -60,37 +60,34 @@
   <body class="hold-transition skin-blue sidebar-mini body_img" style="">
     <div class="wrapper">
       <header class="main-header">
-        
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top nav_top">
           <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <a
+            href="#"
+            class="sidebar-toggle"
+            data-toggle="offcanvas"
+            role="button"
+          >
             <span class="sr-only">Toggle navigation</span>
           </a>
-          
+
           <!-- <a href="#" class="sidebar-toggle2 " >
               <span class="hidden-xs">QESPL Weather Monitoring Application</span>
           </a> -->
 
-          <a href="#" class="sidebar-toggle2 " >
-            <img style="width: 280px;"
-                      src="dist/img/quick_logo_big.png"
-                      class=""
-                     
-                    />
-        </a>
+          <a href="#" class="sidebar-toggle2">
+            <img
+              style="width: 280px"
+              src="dist/img/quick_logo_big.png"
+              class=""
+            />
+          </a>
 
-          <style>
-
-
- 
-          </style>
+          <style></style>
 
           <div class="navbar-custom-menu">
-
-          
             <ul class="nav navbar-nav">
-              
               <!-- Messages: style can be found in dropdown.less-->
               <li class="dropdown messages-menu disable">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -191,12 +188,7 @@
                   <li class="footer"><a href="#">See All Messages</a></li>
                 </ul>
               </li>
-              
-              
-              
-              
-              
-              
+
               <!-- Notifications: style can be found in dropdown.less -->
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -243,12 +235,7 @@
                   <li class="footer"><a href="#">View all</a></li>
                 </ul>
               </li>
-              
-              
-              
-              
-              
-              
+
               <!-- Tasks: style can be found in dropdown.less -->
               <li class="dropdown tasks-menu disable">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -355,15 +342,7 @@
                   </li>
                 </ul>
               </li>
-             
-             
-             
-             
-             
 
-             
-             
-             
               <!-- Toll plaza -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -384,7 +363,8 @@
                       <small
                         ><a class="gw-mob-num" href="tel:+91 9 000 111 222"
                           >9 000 111 222</a
-                        ></small>
+                        ></small
+                      >
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -413,8 +393,6 @@
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
 
-        
-        
         <section class="sidebar">
           <!-- Sidebar user panel -->
           <div class="user-panel">
@@ -427,13 +405,12 @@
             </div>
             <div class="pull-left info">
               <p class="logo_text">QESPL</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <a class="online" href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
-            
           </div>
-          
+
           <!-- search form -->
-        
+
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
@@ -473,7 +450,7 @@
                 </li>
 
                 <li class="">
-                  <a class="menu_icon" href="download-data.html"
+                  <a class="menu_icon" href="index.html"
                     ><i
                       class="fa fa-cloud-download"
                       style="color: #e0ff00; font-size: 17px"
@@ -486,7 +463,7 @@
                   <a class="menu_icon" href="index.html"
                     ><i
                       class="fa fa-cogs"
-                      style="color:  #e0ff00; font-size: 18px"
+                      style="color: #e0ff00; font-size: 18px"
                     ></i>
                     System Settings
                   </a>
@@ -504,174 +481,52 @@
 
         <!-- Main content -->
         <section class="content">
-          <!-- Small boxes (Stat box) -->
-          <div class="row">
-            <div class="col-lg-3 col-xs-6">
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
+          <div class="container">
+            <div class="card card_form">
+              <form>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">User Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      placeholder="User Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Mobile</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Mobile"
+                    />
+                  </div>
                 </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Temprature</h4>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="exampleInputEmail1">Address</label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      placeholder="Address"
+                      style="resize: none;"
+                    ></textarea>
+                  </div>
+             
                 </div>
-
-                <div class="btm-cont-card">
-                
-                  <h1 class="degree">32<span>&#8451;</span></h1>
+                <div class="form-group col-md-6">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile" />
+                  
                 </div>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Humidity</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">25%</h1>
-                </div>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Rain</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">30<span style="font-size: 24px;">mm</span></h1>
-                </div>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Road Temperature</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">34<span>&#8451;</span></h1>
-                </div>
-              </div>
-            </div>
-            <!-- ./col -->
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-xs-6">
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Wind Speed</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">33<span style="font-size: 24px;">kt</span></h1>
-                </div>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Wind Direction</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">North</h1>
-                </div>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="card">
-                <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-success"></i> Online</a
-                  >
-                </div>
-                <div class="card_heading">
-                  <img
-                    class="temprature_img"
-                    src="./dist/img/temprature.png"
-                    alt=""
-                  />
-                  <h4>Visibility</h4>
-                </div>
-
-                <div class="btm-cont-card">
-                  <h1 class="degree">350<span style="font-size: 24px;">m</span></h1>
-                </div>
-              </div>
+           
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
             </div>
           </div>
-          <!-- /.row -->
-          <!-- Main row -->
-
-          <!-- /.row (main row) -->
         </section>
 
         <!-- Flowmeter sections starts===================================================== -->

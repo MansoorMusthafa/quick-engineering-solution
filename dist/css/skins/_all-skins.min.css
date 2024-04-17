@@ -50,7 +50,7 @@
 
 .skin-blue .main-header .logo {
     /* background-color: #367fa921; */
-    color: #fff;
+    color: black;
     border-bottom: 0 solid transparent
 }
 
@@ -95,7 +95,7 @@
 
 .skin-blue .sidebar-menu>li>.treeview-menu {
     margin: 0 10px;
-    background: #ffffff1c;
+    /* background: #ffffff1c; */
     border-radius: 8px;
     padding: 7px;
 }
