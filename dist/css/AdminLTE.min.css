@@ -5814,6 +5814,7 @@ table.text-center th {
     margin-bottom: 1rem;
     background: #302b27ba;
     backdrop-filter: blur(15px) !important;
+    cursor: pointer;
     /* filter: blur(4px); */
 }
 
@@ -5826,7 +5827,7 @@ table.text-center th {
     margin-bottom: 1rem;
     background-image: linear-gradient(343deg, #0303035c, #00bcd4fa);
     backdrop-filter: blur(5px);
-
+    cursor: pointer;
 
 }
 
@@ -6238,7 +6239,7 @@ table.text-center th {
 
 /* 160424 starts\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .dt-tm {
-    
+
     font-weight: 600;
     font-size: 2rem;
     font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
@@ -6247,7 +6248,7 @@ table.text-center th {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-   
+
 }
 
 .sel-1 {
@@ -6288,7 +6289,7 @@ table.text-center th {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .selectcard {
@@ -6313,10 +6314,11 @@ table.text-center th {
     align-items: center !important;
     gap: 15px !important;
 }
-.fa_icon{
 
-color: #e0ff00;
-font-size: 18px;
+.fa_icon {
+
+    color: #e0ff00;
+    font-size: 18px;
 }
 
 
@@ -6423,30 +6425,34 @@ span {
     color: #682773;
     cursor: pointer;
 }
-.card_form:hover{
-/* background: none !important; */
-background-color: none !important;
 
-background-image: none !important;
-backdrop-filter: none !important;
-border: 0px solid rgba(0, 0, 0, 0.125);
-border-radius: 1.25rem;
-box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
-/* border-right: 1px solid #fed000; */
-/* border-bottom: 1px solid white; */
-border: 1px solid white;
-padding: 9px;
-margin-bottom: 1rem;
+.card_form:hover {
+    /* background: none !important; */
+    background-color: none !important;
 
+    background-image: none !important;
+    backdrop-filter: none !important;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
+    /* border-right: 1px solid #fed000; */
+    /* border-bottom: 1px solid white; */
+    border: 1px solid white;
+    padding: 9px;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: #ffffff !important;
 }
-.text-success{
-color: #00e704 !important;
+
+.text-success {
+    color: #00e704 !important;
 }
-.update_btn{
+
+.update_btn {
     padding: 8px;
     background-color: #e0ff00;
     border: none;
@@ -6456,7 +6462,8 @@ color: #00e704 !important;
     font-size: 18px !important;
 
 }
-.update_btn:hover{
+
+.update_btn:hover {
     padding: 8px;
     background-color: black;
     border: none;
@@ -6466,7 +6473,8 @@ color: #00e704 !important;
     font-weight: 700 !important;
 
 }
-.cancel_btn{
+
+.cancel_btn {
     padding: 8px;
     background-color: black;
     border: none;
@@ -6475,7 +6483,8 @@ color: #00e704 !important;
     font-size: 18px !important;
     font-weight: 700 !important;
 }
-.cancel_btn:hover{
+
+.cancel_btn:hover {
     padding: 8px;
     background-color: #e0ff00;
     border: none;
@@ -6484,4 +6493,71 @@ color: #00e704 !important;
     font-weight: 700 !important;
     font-size: 18px !important;
 }
+
+.loader {
+    width: 100px;
+    /* background-color: white; */
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* celciuos styles end------------ */
