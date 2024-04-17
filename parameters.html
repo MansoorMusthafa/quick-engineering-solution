@@ -57,7 +57,144 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
-  <style></style>
+  <style>
+      .border{
+          border:1px solid white !important;
+        }
+    .checkbox-group {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+max-width: 600px;
+user-select: none;
+
+}
+
+
+
+.checkbox-group-legend {
+font-size: 1.5rem;
+font-weight: 700;
+color: #9c9c9c;
+text-align: center;
+line-height: 1.125;
+margin-bottom: 1.25rem;
+}
+
+.checkbox-input {
+
+clip: rect(0 0 0 0);
+clip-path: inset(100%);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+
+
+&:checked + .checkbox-tile {
+  border-color: #e0ff00;
+  box-shadow: 0 5px 10px rgba(#000, 0.1);
+  color: #e0ff00;
+  
+  &:before {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #e0ff00;
+    border-color: #e0ff00;
+  }
+  
+  .checkbox-icon, .checkbox-label {
+    color: #e0ff00;
+    
+  }
+}
+
+
+
+}
+
+.checkbox-tile {
+
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+padding: 5px;
+border-radius: 0.5rem;
+border: 2px solid #ffffff;
+background: #302b27ba;
+width: 270px;
+height: 70px;
+box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
+transition: 0.15s ease;
+cursor: pointer;
+position: relative;
+
+
+&:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid #b5bfd9;
+  background-color: transparent;
+  border-radius: 4px;
+  right: 0.45rem;
+  background-image: url("dist/img/check_mark.png");
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+}
+
+&:hover {
+  border-color: #e0ff00;
+
+  &:before {
+    transform: scale(1);
+    opacity: 1;
+    
+  }
+}
+
+}
+
+
+
+.checkbox-icon {
+transition: .375s ease;
+color: white;
+svg {
+  width: 3rem;
+  height: 3rem;
+}
+}
+
+.checkbox-label {
+
+
+color: white;
+transition: .375s ease;
+text-align: center;
+font-size: 20px;
+padding-right: 27px;
+}
+.checkbox+.checkbox, .radio+.radio {
+  margin-top: 9px !important;
+}
+
+/* buttons start */
+
+
+/* CSS */
+
+ </style>
+
   <body class="hold-transition skin-blue sidebar-mini body_img">
     <div class="wrapper">
       <header class="main-header">
@@ -477,13 +614,7 @@
        
        
        
-       
-       <style>
-        .border{
-          border:1px solid white !important;
-        }
-       </style>
-       
+  
        
        
        
@@ -491,194 +622,15 @@
         <section class="content ">
        
           <div class="col-sm-12  " >
-           <div class="col-sm-9 " style="    background-color: #37322c80;
+           <div class="col-sm-9" style="    background-color: #37322c80;
            border-radius: 27px 27px 0px 27px;
            padding-left: 20px;
-           padding-right: 20px;
-          
-          
-       " >
+           padding-right: 20px;" >
 
             <div class="row">
 
 
-              <style>
-      .checkbox-group {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 600px;
-	user-select: none;
-	
-}
-
-
-
-.checkbox-group-legend {
-	font-size: 1.5rem;
-	font-weight: 700;
-	color: #9c9c9c;
-	text-align: center;
-	line-height: 1.125;
-	margin-bottom: 1.25rem;
-}
-
-.checkbox-input {
-	
-	clip: rect(0 0 0 0);
-	clip-path: inset(100%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
- 
-
-	&:checked + .checkbox-tile {
-		border-color: #e0ff00;
-		box-shadow: 0 5px 10px rgba(#000, 0.1);
-		color: #e0ff00;
-    
-		&:before {
-			transform: scale(1);
-			opacity: 1;
-			background-color: #e0ff00;
-			border-color: #e0ff00;
-		}
-		
-		.checkbox-icon, .checkbox-label {
-			color: #e0ff00;
-      
-		}
-	}
-	
-	
-
-}
-
-.checkbox-tile {
-  
-	display: flex;
-	/* flex-direction: column; */
-	align-items: center;
-	justify-content: center;
-  padding: 5px;
-	border-radius: 0.5rem;
-	border: 2px solid #ffffff;
-	background: #302b27ba;
-  width: 270px;
-  height: 70px;
-	box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
-	transition: 0.15s ease;
-	cursor: pointer;
-	position: relative;
-
-
-	&:before {
-		content: "";
-		position: absolute;
-		display: block;
-		width: 3.25rem;
-		height: 3.25rem;
-		border: 2px solid #b5bfd9;
-		background-color: transparent;
-    border-radius: 4px;
-    right: 0.45rem;
-    background-image: url("dist/img/check_mark.png");
-		background-size: 19px;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-    
-	}
-
-	&:hover {
-		border-color: #e0ff00;
-
-		&:before {
-			transform: scale(1);
-			opacity: 1;
-      
-		}
-	}
- 
-}
-
-
-
-.checkbox-icon {
-	transition: .375s ease;
-  color: white;
-	svg {
-		width: 3rem;
-		height: 3rem;
-	}
-}
-
-.checkbox-label {
- 
-
-  color: white;
-	transition: .375s ease;
-	text-align: center;
-  font-size: 20px;
-  padding-right: 27px;
-}
-.checkbox+.checkbox, .radio+.radio {
-    margin-top: 9px !important;
-}
-
-/* buttons start */
-
-
-/* CSS */
-.log-btn {
-  background-color: #e0ff00;;
-  border: 2px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-}
-
-.log-btn:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
-}
-
-.log-btn:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
-  transform: scale(.96);
-}
-
-.log-btn:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
-  cursor: not-allowed;
-  opacity: 1;
-}
-
-              </style>
-
+             
               <fieldset class="checkbox-group">
                 
                 <div class="checkbox">
@@ -795,14 +747,13 @@
             </div>
           
           </div>
-           
-           
-           
-           
-           <div class="col-sm-3 " style="    background-color: #37322c80;
+          
+          
+          <div class="col-sm-3 " style="    background-color: #37322c80;
            border-radius: 27px 27px 10px 10px;
            padding-left: 20px;
-           padding-right: 20px;" >
+           padding-right: 20px;
+           border-left: 1px solid white;" >
 
             <div class="row" style=" padding: 4px;" >
               
@@ -853,7 +804,7 @@
 
 
            
-                <button class="log-btn" > Click here for complete data log 
+                <button class="log-btn"> Complete data log 
                   <svg style="margin-bottom:-3px;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                 </svg>
@@ -870,6 +821,16 @@
            </div>
 
 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           </div>
         
         </section>
