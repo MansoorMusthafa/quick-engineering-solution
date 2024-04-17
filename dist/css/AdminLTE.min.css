@@ -5812,7 +5812,7 @@ table.text-center th {
     border: 1px solid white;
     padding: 9px;
     margin-bottom: 1rem;
-    background: #302b27ba;
+    background: #000000c9;
     backdrop-filter: blur(15px) !important;
     cursor: pointer;
     /* filter: blur(4px); */
@@ -6573,5 +6573,8 @@ a:hover{
     align-items: center !important;
     justify-content: center !important;
     font-size: 24px !important;
+}
+.text-fail{
+    color: red;
 }
 /* celciuos styles end------------ */
