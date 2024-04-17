@@ -23,7 +23,7 @@ body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .wrapper {
@@ -5168,7 +5168,9 @@ table.text-center th {
 .alert-warning,
 .label-warning,
 .modal-warning .modal-body {
-    background-color: #f39c12 !important;
+    background-color: #e0ff00 !important;
+    color: black !important;
+    border: 0.5px solid #00000052;
 }
 
 .bg-aqua,
@@ -5812,7 +5814,7 @@ table.text-center th {
     border: 1px solid white;
     padding: 9px;
     margin-bottom: 1rem;
-    background: #000000c9;
+    background: #00000094;
     backdrop-filter: blur(15px) !important;
     cursor: pointer;
     /* filter: blur(4px); */
@@ -6319,12 +6321,13 @@ table.text-center th {
     display: flex !important;
     align-items: center !important;
     gap: 15px !important;
+    font-size: 19px !important;
 }
 
 .fa_icon {
 
     color: #e0ff00;
-    font-size: 18px;
+    font-size: 20px;
 }
 .save_cancel {
     background-color: #e0ff00;;
@@ -6491,7 +6494,7 @@ span {
 }
 
 .body_img {
-    background-image: url(../img/blue-sky-with-rainy-clouds.jpg) !important;
+    background-image: url(../img/road_bg.png) !important;
     background-repeat: no-repeat, repeat !important;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
@@ -6718,4 +6721,19 @@ a:hover{
 }
 .text-fail{
     color: red;
+}
+.main_heading{
+    margin-left: 10px;
+    color: black !important;
+    font-weight: 600;
+}
+.img-circle{
+    background-color: white;
+}
+.hidden-xs{
+    color: black;
+}
+.fa-bell-o{
+    color: black;
+
 }

@@ -78,7 +78,7 @@
 
           <a href="#" class="sidebar-toggle2">
             <img
-              style="width: 280px"
+              style="width: 280px; filter: drop-shadow(2px 4px 6px white);"
               src="dist/img/quick_logo_big.png"
               class=""
             />
@@ -411,50 +411,97 @@
 
           <!-- search form -->
 
-        
           <!-- sidebar menu -->
           <ul class="sidebar-menu">
-          
             <li class="active treeview">
-              
               <ul class="treeview-menu">
                 <li class="active">
                   <a class="menu_icon" href="index.html">
-                    <i class="fa fa-home fa_icon"></i> Home</a>
+                    <i class="fa fa-home fa_icon"></i> Home</a
+                  >
                 </li>
 
                 <li class="">
                   <a class="menu_icon" href="parameters.html">
-                    <i class="fa fa-dashboard fa_icon"></i> Set Parameters</a>
+                    <i class="fa fa-dashboard fa_icon"></i> Set Parameters</a
+                  >
                 </li>
 
                 <li class="">
                   <a class="menu_icon" href="setprofile.html">
-                    <i class="fa fa-user fa_icon"></i> Set Profile</a>
+                    <i class="fa fa-user fa_icon"></i> Set Profile</a
+                  >
                 </li>
 
                 <li class="">
                   <a class="menu_icon" href="download-data.html">
-                    <i class="fa fa-cloud-download fa_icon"></i> Download Data</a>
+                    <i class="fa fa-cloud-download fa_icon"></i> Download
+                    Data</a
+                  >
                 </li>
 
                 <li class="">
                   <a class="menu_icon" href="systemsettings.html">
-                    <i class="fa fa-cogs fa_icon"></i> System Settings</a>
-               
+                    <i class="fa fa-cogs fa_icon"></i> System Settings</a
+                  >
                 </li>
 
-
+                <!-- <li class="nav-item">
+                  <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                  Tables
+                  <i class="fas fa-angle-left right"></i>
+                  </p>
+                  </a>
+                  <ul class="nav nav-treeview" style="display: none;">
+                  <li class="nav-item">
+                  <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Simple Tables</p>
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="pages/tables/data.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>DataTables</p>
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="pages/tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>jsGrid</p>
+                  </a>
+                  </li>
+                  </ul>
+                  </li> -->
+                
               </ul>
             </li>
           </ul>
           <!-- sidebar menu -->
         </section>
-       
       </aside>
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="main_heading">QESPL Weather Monitoring Application</h3>
+            </div>
+            <div class="col-md-6 text-right">
+              <h3 class="main_heading">
+                <div class="date-time-card">
+              
+
+                  <div id="digital-clock"></div>
+                
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
         <!-- Content Header (Page header) -->
 
         <!-- Main content -->
@@ -535,9 +582,7 @@
               <!-- small box -->
               <div class="card">
                 <div>
-                  <a href="#"
-                    ><i class="fa fa-circle text-fail"></i> Online</a
-                  >
+                  <a href="#"><i class="fa fa-circle text-fail"></i> Offline</a>
                 </div>
                 <div class="card_heading">
                   <img
@@ -550,9 +595,15 @@
 
                 <div class="btm-cont-card">
                   <h1 class="degree">NA</h1>
-                </div>
+                  
+
               </div>
+
+              
             </div>
+            <p style="color: rgb(255, 255, 255); font-weight: 600; font-size: 13px; text-align: center; text-shadow: 0 0 2px #000000;"  >Last data received @ 15:03 
+              on 15 Apr 2024</p>
+          </div>
             <!-- ./col -->
           </div>
           <div class="row">
@@ -918,5 +969,40 @@
     <script src="dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+    <script>
+      function getDateTime() {
+        var now = new Date();
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var day = now.getDate();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        if (month.toString().length == 1) {
+          month = "0" + month;
+        }
+        if (day.toString().length == 1) {
+          day = "0" + day;
+        }
+        if (hour.toString().length == 1) {
+          hour = "0" + hour;
+        }
+        if (minute.toString().length == 1) {
+          minute = "0" + minute;
+        }
+        if (second.toString().length == 1) {
+          second = "0" + second;
+        }
+        var dateTime =
+          year + "-" + month + "-" + day + " " + hour + ":" + minute;
+        return dateTime;
+      }
+
+      // example usage: realtime clock
+      setInterval(function () {
+        currentTime = getDateTime();
+        document.getElementById("digital-clock").innerHTML = currentTime;
+      }, 1000);
+    </script>
   </body>
 </html>
