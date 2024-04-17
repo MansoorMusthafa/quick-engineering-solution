@@ -6446,4 +6446,42 @@ a{
 .text-success{
 color: #00e704 !important;
 }
+.update_btn{
+    padding: 8px;
+    background-color: #e0ff00;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+
+}
+.update_btn:hover{
+    padding: 8px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: #e0ff00;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+}
+.cancel_btn{
+    padding: 8px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: #e0ff00;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+.cancel_btn:hover{
+    padding: 8px;
+    background-color: #e0ff00;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
 /* celciuos styles end------------ */
