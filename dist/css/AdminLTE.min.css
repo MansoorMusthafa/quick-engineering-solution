@@ -6313,6 +6313,12 @@ table.text-center th {
     align-items: center !important;
     gap: 15px !important;
 }
+.fa_icon{
+
+color: #e0ff00;
+font-size: 18px;
+}
+
 
 /* 160424 end\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .card_heading {

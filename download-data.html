@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Quick Engineering Solutions || Parameters</title>
+
+    
     
     <!-- Tell the browser to be responsive to screen width -->
     <meta
@@ -55,9 +59,42 @@
 
     <!-- chart js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <!-- DataTables Buttons CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
   </head>
 
-  <style></style>
+  <style>
+    button.dt-button, div.dt-button, a.dt-button, input.dt-button {
+  
+   
+    background: #e0ff00;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-weight: 700;
+}
+thead{
+  background: #e0ff00;
+  font-weight: 800;
+  font-size: 18px;
+}
+td{
+  background-color:#fbffe1 !important ;
+  font-size: 15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+
+}
+
+  </style>
   <body class="hold-transition skin-blue sidebar-mini body_img">
     <div class="wrapper">
       <header class="main-header">
@@ -68,12 +105,7 @@
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
           </a>
-          
-          <a href="#" class="sidebar-toggle2 " >
-              <span class="hidden-xs">QESPL Weather Monitoring Application</span>
-          </a>
-
-          <a href="#" class="sidebar-toggle2 " >
+           <a href="#" class="sidebar-toggle2 " >
             <img style="width: 300px;"
                       src="dist/img/quick_logo_big.png"
                       class=""
@@ -81,17 +113,7 @@
                     />
         </a>
 
-          <style>
-            .main-header .sidebar-toggle2 {
-    
-    background-color: transparent;
-    background-image: none;
-    padding: 15px 15px;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
- }
-          </style>
+        
 
           <div class="navbar-custom-menu">
 
@@ -439,89 +461,43 @@
             
           </div>
           
-          <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input
-                type="text"
-                name="q"
-                class="form-control"
-                placeholder="Search..."
-              />
-              <span class="input-group-btn">
-                <button
-                  type="submit"
-                  name="search"
-                  id="search-btn"
-                  class="btn btn-flat"
-                >
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
-          <!-- /.search form -->
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <!-- <li class="header">MAIN NAVIGATION</li> -->
-            <li class="active treeview">
-              <span class="pull-right-container"> </span>
-
-              <ul class="treeview-menu">
-                <li class="active">
-                  <a href="index.html"
-                    ><i
-                      class="fa fa-home"
-                      style="color: cyan; font-size: 18px"
-                    ></i>
-                    Home</a
-                  >
-                </li>
-
-                <li class="">
-                  <a href="index.html"
-                    ><i
-                      class="fa fa-dashboard"
-                      style="color: cyan; font-size: 18px"
-                    ></i>
-                    Set Parameters</a
-                  >
-                </li>
-
-                <li class="">
-                  <a href="index.html"
-                    ><i
-                      class="fa fa-user"
-                      style="color: cyan; font-size: 18px"
-                    ></i>
-                    Set Profile
-                  </a>
-                </li>
-
-                <li class="">
-                  <a href="index.html"
-                    ><i
-                      class="fa fa-cloud-download"
-                      style="color: cyan; font-size: 17px"
-                    ></i>
-                    Download Data</a
-                  >
-                </li>
-
-                <li class="">
-                  <a href="index.html"
-                    ><i
-                      class="fa fa-cogs"
-                      style="color: cyan; font-size: 18px"
-                    ></i>
-                    System Settings
-                  </a>
+         
+               <!-- sidebar menu -->
+               <ul class="sidebar-menu">
+          
+                <li class="active treeview">
+                  
+                  <ul class="treeview-menu">
+                    <li class="active">
+                      <a class="menu_icon" href="index.html">
+                        <i class="fa fa-home fa_icon"></i> Home</a>
+                    </li>
+    
+                    <li class="">
+                      <a class="menu_icon" href="parameters.html">
+                        <i class="fa fa-dashboard fa_icon"></i> Set Parameters</a>
+                    </li>
+    
+                    <li class="">
+                      <a class="menu_icon" href="setprofile.html">
+                        <i class="fa fa-user fa_icon"></i> Set Profile</a>
+                    </li>
+    
+                    <li class="">
+                      <a class="menu_icon" href="download-data.html">
+                        <i class="fa fa-cloud-download fa_icon"></i> Download Data</a>
+                    </li>
+    
+                    <li class="">
+                      <a class="menu_icon" href="#">
+                        <i class="fa fa-cogs fa_icon"></i> System Settings</a>
+                    </li>
+    
+    
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </section>
-        <!-- /.sidebar -->
+              <!-- sidebar menu -->
       </aside>
 
       <!-- Content Wrapper. Contains page content -->
@@ -540,6 +516,9 @@
         .border{
           border:1px solid white !important;
         }
+        label{
+          color: white;
+        }
        </style>
        
        
@@ -548,384 +527,93 @@
         <!-- Main content -->
         <section class="content ">
        
-          <div class="col-sm-12  " >
-           <div class="col-sm-9 " style="    background-color: #37322c80;
-           border-radius: 27px 27px 0px 27px;
-           padding-left: 20px;
-           padding-right: 20px;
+          <div class="col-sm-12   "  style="    background-color: #37322c80;
+          border-radius: 27px 27px 0px 27px;
+          padding: 20px; ;
+          "  >
+        
+
+<!-- Start Date and End Date Picker -->
+<label for="start_date">Start Date:</label>
+<input type="text" id="start_date">
+<label for="end_date">End Date:</label>
+<input type="text" id="end_date">
+<button id="submit">Submit</button>
+
+          
+          <table id="example" class="display" style="width:100%">
+            <thead>
+              <tr>
+                <th>Entry ID</th>
+                <th>Time Stamp</th>
+                <th>Temperature</th>
+                <th>API Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1011</td>
+                <td>13:02:22 03/15/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1012</td>
+                <td>14:02:22 03/26/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1013</td>
+                <td>13:02:22 15/MAR/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1011</td>
+                <td>13:02:22 17/MAR/2024 </td>
+                <td>50</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1011</td>
+                <td>13:02:22 12/MAR/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1012</td>
+                <td>14:02:22 12/MAR/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1013</td>
+                <td>13:02:22 18/MAR/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1011</td>
+                <td>13:02:22 12/MAR/2024 </td>
+                <td>50</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>1011</td>
+                <td>13:02:22 12/MAR/2024 </td>
+                <td>32</td>
+                <td>OK</td>
+              </tr>
+              
+            </tbody>
+          </table>
           
           
-       " >
-
-            <div class="row">
-
-
-              <style>
-      .checkbox-group {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 600px;
-	user-select: none;
-	
-}
-
-
-
-.checkbox-group-legend {
-	font-size: 1.5rem;
-	font-weight: 700;
-	color: #9c9c9c;
-	text-align: center;
-	line-height: 1.125;
-	margin-bottom: 1.25rem;
-}
-
-.checkbox-input {
-	
-	clip: rect(0 0 0 0);
-	clip-path: inset(100%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
- 
-
-	&:checked + .checkbox-tile {
-		border-color: #e0ff00;
-		box-shadow: 0 5px 10px rgba(#000, 0.1);
-		color: #e0ff00;
-    
-		&:before {
-			transform: scale(1);
-			opacity: 1;
-			background-color: #e0ff00;
-			border-color: #e0ff00;
-		}
-		
-		.checkbox-icon, .checkbox-label {
-			color: #e0ff00;
-      
-		}
-	}
-	
-	
-
-}
-
-.checkbox-tile {
-  
-	display: flex;
-	/* flex-direction: column; */
-	align-items: center;
-	justify-content: center;
-  padding: 5px;
-	border-radius: 0.5rem;
-	border: 2px solid #ffffff;
-	background: #302b27ba;
-  width: 270px;
-  height: 70px;
-	box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
-	transition: 0.15s ease;
-	cursor: pointer;
-	position: relative;
-
-
-	&:before {
-		content: "";
-		position: absolute;
-		display: block;
-		width: 3.25rem;
-		height: 3.25rem;
-		border: 2px solid #b5bfd9;
-		background-color: transparent;
-    border-radius: 4px;
-    right: 0.45rem;
-    background-image: url("dist/img/check_mark.png");
-		background-size: 19px;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-    
-	}
-
-	&:hover {
-		border-color: #e0ff00;
-
-		&:before {
-			transform: scale(1);
-			opacity: 1;
-      
-		}
-	}
- 
-}
-
-
-
-.checkbox-icon {
-	transition: .375s ease;
-  color: white;
-	svg {
-		width: 3rem;
-		height: 3rem;
-	}
-}
-
-.checkbox-label {
- 
-
-  color: white;
-	transition: .375s ease;
-	text-align: center;
-  font-size: 20px;
-  padding-right: 27px;
-}
-.checkbox+.checkbox, .radio+.radio {
-    margin-top: 9px !important;
-}
-
-/* buttons start */
-
-
-/* CSS */
-.log-btn {
-  background-color: #e0ff00;;
-  border: 2px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-}
-
-.log-btn:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
-}
-
-.log-btn:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
-  transform: scale(.96);
-}
-
-.log-btn:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
-  cursor: not-allowed;
-  opacity: 1;
-}
-
-              </style>
-
-              <fieldset class="checkbox-group">
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
-                          <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
-                          <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
-                        </svg>
-                      </span>
-                      <span class="checkbox-label">Temperature</span>
-                    </span>
-                  </label>
-                </div>
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
-                          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
-                        </svg>
-                      </span> &nbsp;&nbsp;
-                      <span class="checkbox-label">Wind Speed</span>
-                    </span>
-                  </label>
-                </div>
-              
-              </fieldset>
-
-              <fieldset class="checkbox-group">
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
-                          <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
-                          <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
-                        </svg>
-                      </span>
-                      <span class="checkbox-label">Humidity</span>
-                    </span>
-                  </label>
-                </div>
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-drizzle" viewBox="0 0 16 16">
-                          <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2"/>
-                        </svg>
-                      </span> &nbsp;&nbsp;
-                      <span class="checkbox-label">Rain</span>
-                    </span>
-                  </label>
-                </div>
-              
-              </fieldset>
-
-              <fieldset class="checkbox-group">
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
-                          <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
-                          <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
-                        </svg>
-                      </span>
-                      <span class="checkbox-label">Temperature</span>
-                    </span>
-                  </label>
-                </div>
-                
-                <div class="checkbox">
-                  <label class="checkbox-wrapper">
-                    <input type="checkbox" class="checkbox-input" />
-                    <span class="checkbox-tile">
-                      <span class="checkbox-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
-                          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
-                        </svg>
-                      </span> &nbsp;&nbsp;
-                      <span class="checkbox-label">Wind Speed</span>
-                    </span>
-                  </label>
-                </div>
-              
-              </fieldset>
-
-
-              <fieldset class="checkbox-group">
-                 <div class="checkbox ">
-                  <button class="log-btn" >  Save </button>
-
-                  <button class="log-btn" >  Cancel </button>
-                </div>
-                
-                
-              
-              </fieldset>
-            
-            </div>
+           
+           
+           
           
-          </div>
-           
-           
-           
-           
-           <div class="col-sm-3 " style="    background-color: #37322c80;
-           border-radius: 27px 27px 10px 10px;
-           padding-left: 20px;
-           padding-right: 20px;" >
-
-            <div class="row" style=" padding: 4px;" >
-              
-              <div class="col">
-                <div class="noticard">
-                  <div class="dt-tm-card">
-                    <div class="dt-tm">14/04/24 - 10:20:00</div>
-                  </div>
-  
-                  <div class="btm-cont-card">
-                    <p class="sel-1"> 1. Temperature Selected </p>
-                    <p class="sel-1"> 2. Wind Speed Unselected</p>
-                    <p class="sel-1"> Updated by user ABC </p>
-                  </div>
-                
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="noticard">
-                  <div class="dt-tm-card">
-                    <div class="dt-tm">14/04/24 - 10:20:00</div>
-                  </div>
-  
-                  <div class="btm-cont-card">
-                    <p class="sel-1"> 1. Temperature Selected </p>
-                    <p class="sel-1"> 2. Wind Speed Unselected</p>
-                    <p class="sel-1"> Updated by user ABC </p>
-                  </div>
-                
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="noticard">
-                  <div class="dt-tm-card">
-                    <div class="dt-tm">14/04/24 - 10:20:00</div>
-                  </div>
-  
-                  <div class="btm-cont-card">
-                    <p class="sel-1"> 1. Temperature Selected </p>
-                    <p class="sel-1"> 2. Wind Speed Unselected</p>
-                    <p class="sel-1"> Updated by user ABC </p>
-                  </div>
-                
-                </div>
-              </div>
-
-
-           
-                <button class="log-btn" > Click here for complete data log 
-                  <svg style="margin-bottom:-3px;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                </svg>
-                   </button>
-          
-             
-
-              
-
-             
-              
-            </div>
-
-           </div>
 
 
           </div>
@@ -1164,18 +852,9 @@
        immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div>
+
     <!-- ./wrapper -->
-    <script>
-      $(document).ready(function () {
-        livedata();
-        fm1();
-        fm2();
-        setInterval(function () {
-          livedata();
-          fm1();
-          fm2();
-        }, 15000);
-      });
+   
     </script>
     <!-- jQuery 2.2.3 -->
     <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
@@ -1214,5 +893,70 @@
     <script src="dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+
+
+ <!-- DataTables JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<!-- DataTables Buttons JS -->
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
+<!-- jQuery UI JS -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Initialize DataTable with export buttons
+    var table = $('#example').DataTable({
+      dom: 'Bfrtip', // Add the export buttons container
+      buttons: [
+        {
+          extend: 'copyHtml5',
+          text: 'Copy to Clipboard',
+          className: 'btn btn-primary'
+        },
+        {
+          extend: 'excelHtml5',
+          text: 'Export to Excel',
+          className: 'btn btn-primary'
+        },
+        {
+          extend: 'csvHtml5',
+          text: 'Export to CSV',
+          className: 'btn btn-primary'
+        },
+        {
+          extend: 'pdfHtml5',
+          text: 'Export to PDF',
+          className: 'btn btn-primary'
+        },
+        {
+          extend: 'print',
+          text: 'Print',
+          className: 'btn btn-primary'
+        }
+      ]
+    });
+
+    // Initialize datepickers for start and end dates
+    $('#start_date').datepicker();
+    $('#end_date').datepicker();
+
+    // Submit button click event to filter table data by date range
+    $('#submit').click(function() {
+      var startDate = $('#start_date').datepicker('getDate');
+      var endDate = $('#end_date').datepicker('getDate');
+      
+      // Filter table data based on date range
+      table.draw().search(
+        startDate.getFullYear() + '-' + (startDate.getMonth() + 1) + '-' + startDate.getDate() + ' ' +
+        endDate.getFullYear() + '-' + (endDate.getMonth() + 1) + '-' + endDate.getDate()
+      ).draw();
+    });
+  });
+</script>
+
+
   </body>
 </html>
