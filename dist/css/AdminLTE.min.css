@@ -6234,7 +6234,7 @@ table.text-center th {
 
 /* 160424 starts\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .dt-tm {
-    color: rgb(255, 255, 255);
+    
     font-weight: 600;
     font-size: 2rem;
     font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
@@ -6243,7 +6243,7 @@ table.text-center th {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 0 0 8px;
+   
 }
 .sel-1 {
     font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
@@ -6257,21 +6257,22 @@ table.text-center th {
     height: 100%;
     color: white;
     border: 0px solid rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-    box-shadow: rgba(104, 104, 104, 0.151) 0rem 1.25rem 1.6875rem 0rem;
+    border-radius: 2.25rem;
+    box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
     border: 1px solid white;
     padding: 9px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-image: linear-gradient(343deg, #0303035c, #222fd869);
+    background: #302b27ba;
+    backdrop-filter: blur(15px) !important;
     backdrop-filter: blur(5px);
     text-align: center;
 
 }
 .dt-tm-card {
-    color: aqua;
+    color: rgb(0 0 0);
     font-weight: 600;
-    background: #1d2263;
+    background: #e0ff00;
     border: px solid;
     font-size: 3rem;
     font-family: "Plus Jakarta Display", Helvetica, Arial, sans-serif;
@@ -6280,7 +6281,7 @@ table.text-center th {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(338deg, #03030363, #2f38a8);
+    
 }
 .selectcard {
     width: 100%;
