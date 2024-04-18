@@ -104,27 +104,7 @@ input{
     margin-bottom: 6px;
 
 }
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
 
-  /* Style for submenu items */
-  .submenu a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Style for when hovering over the parent li */
-  li:hover .submenu {
-    display: block;
-  }
 
   </style>
   <body class="hold-transition skin-blue sidebar-mini body_img">
@@ -515,9 +495,17 @@ input{
                         <i class="fa fa-user fa_icon"></i> Set Profile</a>
                     </li>
     
-                    <li class="">
-                      <a class="menu_icon" href="download-data.html">
-                        <i class="fa fa-cloud-download fa_icon"></i> Download Data</a>
+                    <li class="parent">
+                      <a class="menu_icon" href="#">
+                        <i class="fa fa-cloud-download fa_icon"></i> Download Data
+                        <i class="fa fa-angle-down" style="font-size:24px"></i>
+                        <i class="fa fa-angle-up" style="font-size:24px; display:none;"></i>
+                      </a> 
+                      <ul class="submenu">
+                        <li style="margin-bottom: 10px;"><a href="download-data.html"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> All Data</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Temperature</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Humidity</a></li>
+                      </ul>
                     </li>
     
                     <li class="">
@@ -988,7 +976,20 @@ input{
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var parents = document.querySelectorAll(".parent");
 
+    parents.forEach(function (parent) {
+      var submenu = parent.querySelector(".submenu");
+
+      parent.addEventListener("click", function () {
+        submenu.classList.toggle("show");
+        parent.classList.toggle("open");
+      });
+    });
+  });
+</script>
 
   </body>
 </html>

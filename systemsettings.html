@@ -449,14 +449,35 @@
                   </a>
                 </li>
 
-                <li class="">
-                  <a class="menu_icon" href="download-data.html"
-                    ><i
-                      class="fa fa-cloud-download"
-                      style="color: #e0ff00; font-size: 17px"
+                <li class="parent">
+                  <a class="menu_icon" href="#">
+                    <i class="fa fa-cloud-download fa_icon"></i> Download Data
+                    <i class="fa fa-angle-down" style="font-size: 24px"></i>
+                    <i
+                      class="fa fa-angle-up"
+                      style="font-size: 24px; display: none"
                     ></i>
-                    Download Data</a
-                  >
+                  </a>
+                  <ul class="submenu">
+                    <li style="margin-bottom: 10px">
+                      <a href="download-data.html">
+                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        All Data</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#"
+                        ><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        Temperature</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#"
+                        ><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        Humidity</a
+                      >
+                    </li>
+                  </ul>
                 </li>
 
                 <li class="">
@@ -476,7 +497,6 @@
       </aside>
 
       <div class="content-wrapper">
-    
         <h3 class="main_heading">QESPL Weather Monitoring Application</h3>
         <!-- Main content -->
         <section class="content">
@@ -518,7 +538,7 @@
           </div>
           <div class="row">
             <div class="col-md-12" style="text-align: center">
-              <div class="card card_form" style="    height: 395px;">
+              <div class="card card_form" style="height: 395px">
                 <img class="loader" src="./dist/img/spinner.png" />
 
                 <h1>We are Checking the system please wait...</h1>
@@ -806,5 +826,19 @@
     <script src="dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var parents = document.querySelectorAll(".parent");
+
+        parents.forEach(function (parent) {
+          var submenu = parent.querySelector(".submenu");
+
+          parent.addEventListener("click", function () {
+            submenu.classList.toggle("show");
+            parent.classList.toggle("open");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

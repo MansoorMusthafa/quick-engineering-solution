@@ -46,17 +46,24 @@
     />
     <script src="dist/js/jquery.min.js"></script>
     <script src="api/fetch.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     />
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
     <!-- chart js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
-  <style></style>
+  <style>
+    .submenu {
+      display: none;
+    }
+  </style>
   <body class="hold-transition skin-blue sidebar-mini body_img" style="">
     <div class="wrapper">
       <header class="main-header">
@@ -78,7 +85,7 @@
 
           <a href="#" class="sidebar-toggle2">
             <img
-              style="width: 280px; filter: drop-shadow(2px 4px 6px white);"
+              style="width: 280px; filter: drop-shadow(2px 4px 6px white)"
               src="dist/img/quick_logo_big.png"
               class=""
             />
@@ -433,11 +440,35 @@
                   >
                 </li>
 
-                <li class="">
-                  <a class="menu_icon" href="download-data.html">
-                    <i class="fa fa-cloud-download fa_icon"></i> Download
-                    Data</a
-                  >
+                <li class="parent">
+                  <a class="menu_icon" href="#">
+                    <i class="fa fa-cloud-download fa_icon"></i> Download Data
+                    <i class="fa fa-angle-down" style="font-size: 24px"></i>
+                    <i
+                      class="fa fa-angle-up"
+                      style="font-size: 24px; display: none"
+                    ></i>
+                  </a>
+                  <ul class="submenu">
+                    <li style="margin-bottom: 10px">
+                      <a href="download-data.html">
+                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        All Data</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#"
+                        ><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        Temperature</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#"
+                        ><i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                        Humidity</a
+                      >
+                    </li>
+                  </ul>
                 </li>
 
                 <li class="">
@@ -475,7 +506,6 @@
                   </li>
                   </ul>
                   </li> -->
-                
               </ul>
             </li>
           </ul>
@@ -493,10 +523,7 @@
             <div class="col-md-6 text-right">
               <h3 class="main_heading">
                 <div class="date-time-card">
-              
-
                   <div id="digital-clock"></div>
-                
                 </div>
               </h3>
             </div>
@@ -595,15 +622,20 @@
 
                 <div class="btm-cont-card">
                   <h1 class="degree">NA</h1>
-                  
-
+                </div>
               </div>
-
-              
+              <p
+                style="
+                  color: rgb(255, 255, 255);
+                  font-weight: 600;
+                  font-size: 13px;
+                  text-align: center;
+                  text-shadow: 0 0 2px #000000;
+                "
+              >
+                Last data received @ 15:03 on 15 Apr 2024
+              </p>
             </div>
-            <p style="color: rgb(255, 255, 255); font-weight: 600; font-size: 13px; text-align: center; text-shadow: 0 0 2px #000000;"  >Last data received @ 15:03 
-              on 15 Apr 2024</p>
-          </div>
             <!-- ./col -->
           </div>
           <div class="row">
@@ -1003,6 +1035,20 @@
         currentTime = getDateTime();
         document.getElementById("digital-clock").innerHTML = currentTime;
       }, 1000);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var parents = document.querySelectorAll(".parent");
+
+        parents.forEach(function (parent) {
+          var submenu = parent.querySelector(".submenu");
+
+          parent.addEventListener("click", function () {
+            submenu.classList.toggle("show");
+            parent.classList.toggle("open");
+          });
+        });
+      });
     </script>
   </body>
 </html>

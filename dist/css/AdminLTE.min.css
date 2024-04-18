@@ -6597,7 +6597,7 @@ margin-bottom: 1rem;
 
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #ffffff !important;
 }
 
@@ -6737,6 +6737,25 @@ a:hover{
     color: black;
 
 }
-.submenu {
+
+  .submenu {
     display: none;
+  }
+  
+  .parent.open > a .fa-angle-down {
+    display: none;
+  }
+  
+  .parent.open > a .fa-angle-up {
+    display: inline-block !important;
+  }
+  
+  .parent > a .fa-angle-up {
+    display: none;
+  }
+  li{
+    list-style-type: none !important;
+  }
+  .fa-dot-circle-o{
+    margin-right: 10px;
   }
