@@ -466,6 +466,7 @@
               </ul>
             </li>
           </ul>
+          
           <!-- sidebar menu -->
         </section>
       </aside>
@@ -761,5 +762,23 @@
         });
       });
     </script>
+    <script>
+      
+    </script>
+
+<script>
+  // Add event listener to all list items
+  document.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', () => {
+      // Remove 'active' class from all list items
+      document.querySelectorAll('li').forEach(item => {
+        item.classList.remove('active');
+      });
+      // Add 'active' class to the clicked list item
+      item.classList.add('active');
+    });
+  });
+</script>
+
   </body>
 </html>
