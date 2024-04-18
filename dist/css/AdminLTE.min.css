@@ -6484,6 +6484,7 @@ span {
 }
 
 .nav_top {
+  
     background-color: #00000005 !important;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
@@ -6513,7 +6514,7 @@ span {
     color: white;
     font-size: 20px;
     text-decoration: none;
-    margin-left: 420px;
+    /* margin-left: 420px; */
 }
 
 .notifications-menu {
@@ -6699,7 +6700,7 @@ a:hover {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 24px !important;
+    font-size: 23px !important;
 }
 
 .text-fail {
@@ -6813,4 +6814,25 @@ li {
     }
 
 
+/* .top_nav{
+    display: flex !important;
+    align-items: center !important;
+   
+    justify-content: space-between !important;
 
+} */
+.top_ele{
+    margin-right: auto !important;
+}
+.row_top{
+    display: flex;
+}
+.burg{
+    margin-left: 15px;
+}
+.end{
+    margin-right: 15px !important;
+}
+.burger_color{
+    color: #000000 !important;
+}

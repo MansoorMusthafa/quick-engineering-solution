@@ -146,120 +146,117 @@
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top nav_top">
           <!-- Sidebar toggle button-->
-          <a
-            href="#"
-            class="sidebar-toggle"
-            data-toggle="offcanvas"
-            role="button"
-          >
-            <span class="sr-only">Toggle navigation</span>
-          </a>
-          <a href="#" class="sidebar-toggle2">
-            <img
-              style="width: 300px"
-              src="dist/img/quick_logo_big.png"
-              class=""
-            />
-          </a>
+          <div class="row row_top">
+            <div class="col top_ele burg">
+              <a
+                href="#"
+                class="sidebar-toggle burger_color"
+                data-toggle="offcanvas"
+                role="button"
+              >
+                <span class="sr-only">Toggle navigation</span>
+              </a>
+            </div>
 
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-           
-            
+            <div class="col top_ele">
+              <img
+                style="width: 280px; filter: drop-shadow(2px 4px 6px white)"
+                src="dist/img/quick_logo_big.png"
+                class=""
+              />
+            </div>
+            <div class="col end">
+              <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-warning">10</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="header">You have 10 notifications</li>
+                      <li>
+                        <!-- inner menu: contains the actual data -->
+                        <ul class="menu">
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-warning text-yellow"></i> Alert
+                              message
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-warning text-yellow"></i> Alert
+                              message
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-warning text-yellow"></i> Alert
+                              message
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-warning text-yellow"></i> Alert
+                              message
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-user text-aqua"></i> You changed
+                              your username
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="footer"><a href="#">View all</a></li>
+                    </ul>
+                  </li>
 
-         
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Alert
-                          message
-                        </a>
+                  <!-- Tasks: style can be found in dropdown.less -->
+
+                  <!-- Toll plaza -->
+                  <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <span class="hidden-xs" style="font-size: 22px"
+                        >Toll Plaza 1
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <!-- User image -->
+                      <li class="user-header">
+                        <img
+                          src="dist/img/quick_logo_small.png"
+                          class="img-circle"
+                          alt="User Image"
+                        />
+                        <p>
+                          ABC Nagar, Update
+                          <small
+                            ><a class="gw-mob-num" href="tel:+91 9 000 111 222"
+                              >9 000 111 222</a
+                            ></small
+                          >
+                        </p>
                       </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Alert
-                          message
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Alert
-                          message
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Alert
-                          message
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-aqua"></i> You changed your
-                          username
-                        </a>
+                      <!-- Menu Body -->
+
+                      <!-- Menu Footer-->
+                      <li class="user-footer">
+                        <div class="pull-left">
+                          <a href="#" class="nav_btn">Profile</a>
+                        </div>
+                        <div class="pull-right">
+                          <a href="#" class="nav_btn">Sign out</a>
+                        </div>
                       </li>
                     </ul>
                   </li>
-                  <li class="footer"><a href="#">View all</a></li>
+                  <!-- Toll plaza -->
                 </ul>
-              </li>
-
-              <!-- Tasks: style can be found in dropdown.less -->
-            
-
-              <!-- Toll plaza -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs" style="font-size: 22px"
-                    >Toll Plaza 1
-                  </span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img
-                      src="dist/img/quick_logo_small.png"
-                      class="img-circle"
-                      alt="User Image"
-                    />
-                    <p>
-                      ABC Nagar, Update
-                      <small
-                        ><a class="gw-mob-num" href="tel:+91 9 000 111 222"
-                          >9 000 111 222</a
-                        ></small
-                      >
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="nav_btn">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="#" class="nav_btn">Sign out</a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- Toll plaza -->
-
-              <!-- <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li> -->
-            </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </header>
