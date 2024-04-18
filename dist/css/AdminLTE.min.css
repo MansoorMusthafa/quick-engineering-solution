@@ -6192,17 +6192,17 @@ table.text-center th {
     text-align: left;
     list-style: none;
     background: #232120f5 !important;
-    border: 1px solid  #e0ff00 !important;
-    border-top:none !important;
-    border-right:none !important;
-   
+    border: 1px solid #e0ff00 !important;
+    border-top: none !important;
+    border-right: none !important;
+
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
     border-radius: 2rem 0 2rem 2rem !important;
-   
+
     backdrop-filter: blur(15px) !important;
 }
 
@@ -6324,15 +6324,17 @@ table.text-center th {
     color: #e0ff00;
     font-size: 20px;
 }
+
 .save_cancel {
-    background-color: #e0ff00;;
+    background-color: #e0ff00;
+    ;
     border: 2px solid #222222;
     border-radius: 8px;
     box-sizing: border-box;
     color: #222222;
     cursor: pointer;
     display: inline-block;
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -6343,124 +6345,126 @@ table.text-center th {
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
     user-select: none;
     -webkit-user-select: none;
     width: auto;
-    }
-    
-    .save_cancel:focus-visible {
+}
+
+.save_cancel:focus-visible {
     box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
     transition: box-shadow .2s;
-    }
-    
-    .save_cancel:active {
+}
+
+.save_cancel:active {
     background-color: #F7F7F7;
     border-color: #000000;
     transform: scale(.96);
-    }
-    
-    .save_cancel:disabled {
+}
+
+.save_cancel:disabled {
     border-color: #DDDDDD;
     color: #DDDDDD;
     cursor: not-allowed;
     opacity: 1;
-    }
+}
 
-    /* cancel button starts */
-    .cancel_btn {
-        background-color: #222222;;
-        border: 2px solid #222222;
-        border-radius: 8px;
-        box-sizing: border-box;
-        color: #e0ff00;
-         cursor: pointer;
-        display: inline-block;
-        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-        font-size: 16px;
-       
-        line-height: 20px;
-        margin: 0;
-        outline: none;
-        padding: 6px 23px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        touch-action: manipulation;
-        transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-        user-select: none;
-        -webkit-user-select: none;
-        width: auto;
-        font-weight: 100 !important;
-        }
-        
-        .cancel_btn:focus-visible {
-        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-        transition: box-shadow .2s;
-        }
-        
-        .cancel_btn:active {
-        background-color: #F7F7F7;
-        border-color: #000000;
-        transform: scale(.96);
-        }
-        
-        .cancel_btn:disabled {
-        border-color: #DDDDDD;
-        color: #DDDDDD;
-        cursor: not-allowed;
-        opacity: 1;
-        }
+/* cancel button starts */
+.cancel_btn {
+    background-color: #222222;
+    ;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #e0ff00;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
 
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 6px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    font-weight: 100 !important;
+}
 
+.cancel_btn:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
 
+.cancel_btn:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.cancel_btn:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
 
 
-    /* log button starts */
-    .log-btn {
-        background-color: #e0ff00;;
-        border: 2px solid #222222;
-        border-radius: 8px;
-        box-sizing: border-box;
-        color: #222222;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-        margin: 0;
-        outline: none;
-        padding: 13px 23px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        touch-action: manipulation;
-        transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-        user-select: none;
-        -webkit-user-select: none;
-        width: 100%;
-        }
-        
-        .log-btn:focus-visible {
-        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-        transition: box-shadow .2s;
-        }
-        
-        .log-btn:active {
-        background-color: #F7F7F7;
-        border-color: #000000;
-        transform: scale(.96);
-        }
-        
-        .log-btn:disabled {
-        border-color: #DDDDDD;
-        color: #DDDDDD;
-        cursor: not-allowed;
-        opacity: 1;
-        }
-        
-    
+
+
+
+/* log button starts */
+.log-btn {
+    background-color: #e0ff00;
+    ;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 100%;
+}
+
+.log-btn:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.log-btn:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.log-btn:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+
 
 
 /* 160424 end\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -6571,23 +6575,24 @@ span {
     cursor: pointer;
 }
 
-.card_form{
-    border-radius: 27px ;
+.card_form {
+    border-radius: 27px;
 }
-.card_form:hover{
-/* background: none !important; */
-background-color: none !important;
-border-radius: 27px;
-background-image: none !important;
-backdrop-filter: none !important;
-border: 0px solid rgba(0, 0, 0, 0.125);
 
-box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
-/* border-right: 1px solid #fed000; */
-/* border-bottom: 1px solid white; */
-border: 1px solid white;
-padding: 9px;
-margin-bottom: 1rem;
+.card_form:hover {
+    /* background: none !important; */
+    background-color: none !important;
+    border-radius: 27px;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+
+    box-shadow: rgb(239 255 120) 0rem 0rem 6px 0px;
+    /* border-right: 1px solid #fed000; */
+    /* border-bottom: 1px solid white; */
+    border: 1px solid white;
+    padding: 9px;
+    margin-bottom: 1rem;
 }
 
 
@@ -6596,9 +6601,10 @@ a {
     color: #ffffff !important;
 }
 
-a:hover{
+a:hover {
     text-decoration: none !important;
 }
+
 .text-success {
     color: #00e704 !important;
 }
@@ -6624,7 +6630,8 @@ a:hover{
     font-weight: 700 !important;
 
 }
-.cancel_btn2{
+
+.cancel_btn2 {
     padding: 8px;
     background-color: black;
     border: none;
@@ -6633,7 +6640,8 @@ a:hover{
     font-size: 18px !important;
     font-weight: 700 !important;
 }
-.cancel_btn2:hover{
+
+.cancel_btn2:hover {
     padding: 8px;
     background-color: #e0ff00;
     border: none;
@@ -6708,50 +6716,58 @@ a:hover{
         transform: rotate(360deg);
     }
 }
-.temperature{
+
+.temperature {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     font-size: 24px !important;
 }
-.text-fail{
+
+.text-fail {
     color: red;
 }
-.main_heading{
+
+.main_heading {
     margin-left: 10px;
     color: black !important;
     font-weight: 600;
 }
-.img-circle{
+
+.img-circle {
     background-color: white;
 }
-.hidden-xs{
+
+.hidden-xs {
     color: black;
 }
-.fa-bell-o{
+
+.fa-bell-o {
     color: black;
 
 }
 
-  .submenu {
+.submenu {
     display: none;
-  }
-  
-  .parent.open > a .fa-angle-down {
+}
+
+.parent.open>a .fa-angle-down {
     display: none;
-  }
-  
-  .parent.open > a .fa-angle-up {
+}
+
+.parent.open>a .fa-angle-up {
     display: inline-block !important;
-  }
-  
-  .parent > a .fa-angle-up {
+}
+
+.parent>a .fa-angle-up {
     display: none;
-  }
-  li{
+}
+
+li {
     list-style-type: none !important;
-  }
-  .fa-dot-circle-o{
+}
+
+.fa-dot-circle-o {
     margin-right: 10px;
     color: #e0ff00;
   }
@@ -6813,3 +6829,6 @@ a:hover{
     cursor: not-allowed;
     opacity: 1;
     }
+
+
+
